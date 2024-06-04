@@ -11,7 +11,7 @@ services:
       - ./DMRIds.dat:/MMDVMHost/DMRIds.dat:ro       # Path to the DMRIds.dat File (Optional)
       - mmdvmhost:/MMDVMHost
     devices:
-      - /dev/ttyACM0:/dev/ttyACM0                   # Specify the mmdvm "/dev/tty***" interface
+      - /dev/ttyACM0:/dev/ttyS0                   # Specify the mmdvm "/dev/tty***" interface
 volumes:
   mmdvmhost:
 
